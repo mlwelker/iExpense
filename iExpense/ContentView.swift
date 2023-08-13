@@ -1,19 +1,19 @@
-//
-//  ContentView.swift
-//  iExpense
-//
-//  Created by Michael Welker on 2023-08-12.
-//
 
 import SwiftUI
 
+class User: ObservableObject {
+    @Published var firstName = "Bilbo"
+    @Published var lastName = "Baggins"
+}
+
 struct ContentView: View {
+    @StateObject var user = User()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Your name is \(user.firstName) \(user.lastName)")
+            TextField("First name:", text: $user.firstName)
+            TextField("Last name:", text: $user.lastName)
         }
         .padding()
     }
