@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A24E7EA22A89DBA9003E1C97 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24E7EA12A89DBA9003E1C97 /* ExpenseItem.swift */; };
 		A24E7EA42A89DBFC003E1C97 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24E7EA32A89DBFC003E1C97 /* Expenses.swift */; };
+		A2B736B72A8A9CDB0075A28A /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B736B62A8A9CDB0075A28A /* AddView.swift */; };
 		A2E5D2492A88974300714A81 /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E5D2482A88974300714A81 /* iExpenseApp.swift */; };
 		A2E5D24B2A88974300714A81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E5D24A2A88974300714A81 /* ContentView.swift */; };
 		A2E5D24D2A88974400714A81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E5D24C2A88974400714A81 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		A24E7EA12A89DBA9003E1C97 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		A24E7EA32A89DBFC003E1C97 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		A2B736B62A8A9CDB0075A28A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		A2E5D2452A88974300714A81 /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E5D2482A88974300714A81 /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
 		A2E5D24A2A88974300714A81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				A2E5D2482A88974300714A81 /* iExpenseApp.swift */,
 				A2E5D24A2A88974300714A81 /* ContentView.swift */,
+				A2B736B62A8A9CDB0075A28A /* AddView.swift */,
 				A24E7EA12A89DBA9003E1C97 /* ExpenseItem.swift */,
 				A24E7EA32A89DBFC003E1C97 /* Expenses.swift */,
 				A2E5D24C2A88974400714A81 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				A24E7EA42A89DBFC003E1C97 /* Expenses.swift in Sources */,
 				A2E5D24B2A88974300714A81 /* ContentView.swift in Sources */,
+				A2B736B72A8A9CDB0075A28A /* AddView.swift in Sources */,
 				A24E7EA22A89DBA9003E1C97 /* ExpenseItem.swift in Sources */,
 				A2E5D2492A88974300714A81 /* iExpenseApp.swift in Sources */,
 			);
