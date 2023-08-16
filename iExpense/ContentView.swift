@@ -3,27 +3,23 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var expenses = Expenses()
+    
     @State private var showingAddExpense = false
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
-                        }
-                        
-                        Spacer()
-                        
-                        Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
-                            .font(item.amount > 10 ? .system(.body, weight: .bold) : .none )
-                            .foregroundColor(item.amount > 100 ? .red : .black)
-                    }
+                Section {
+                    ExpensesList(expenses: expenses, expenseType: .personal)
+                } header: {
+                    Text("personal")
                 }
-                .onDelete(perform: removeItems)
+                
+                Section {
+                    ExpensesList(expenses: expenses, expenseType: .business)
+                } header: {
+                    Text("business")
+                }
             }
             .navigationTitle("iExpense")
             .toolbar {
@@ -37,10 +33,6 @@ struct ContentView: View {
                 AddView(expenses: expenses)
             }
         }
-    }
-    
-    func removeItems(at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
     }
 }
 

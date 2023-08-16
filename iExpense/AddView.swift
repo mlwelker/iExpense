@@ -6,10 +6,10 @@ struct AddView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name = ""
-    @State private var type = "Personal"
+    @State private var type = "personal"
     @State private var amount = 0.0
     
-    let types = ["Business", "Personal"]
+    let types = ["business", "personal"]
     
     var body: some View {
         NavigationView {
@@ -29,7 +29,7 @@ struct AddView: View {
             .toolbar {
                 Button("Save") {
                     let item = ExpenseItem(name: name, type: type, amount: amount)
-                    expenses.items.append(item)
+                    expenses.items[type]?.append(item)
                     dismiss()
                 }
             }
